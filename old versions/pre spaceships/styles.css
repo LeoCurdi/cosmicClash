@@ -1,0 +1,34 @@
+/* general css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #e3e3e3;
+}
+
+/* tutorial page stuff */
+#tutorialPgContent {
+  width: 50%;
+  height: 60%;
+  background-color: white;
+}
+#tutorialPgContent h1 {
+  font-size: 1.8rem;
+}
+#skipTutorialButton1, #skipTutorialButton2, #skipTutorialButton3, #nextButton1, #nextButton2 {
+  width: 40%;
+  display: inline-block;
+  padding: 10px 0px;
+  border-radius: 7px;
+}
+
+
+
+/* start page stuff */
+#startGameButton, #viewTutorialButton {
+  width: 40%;
+  display: inline-block;
+  border-radius: 7px;
+}
+#startGameButton {
+  margin-right: 10px;
+}

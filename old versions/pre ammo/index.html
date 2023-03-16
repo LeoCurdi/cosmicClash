@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script> <!-- hook up a link that lets u use tailwind -->
+</head>
+<body style="overflow: hidden;">
+  
+  <div style="position: fixed; top: 0; right: 0;" class=" select-none">
+    <p style="text-align: right; padding-right: 5px;" id="instructions">use w,a,s,d to move, left-click to shoot, dont get hit by blobs</p>
+  </div>
+
+  <div class="fixed select-none" id="scoreUpperLeft">
+    <span class="px-1">Score:</span><span id="score">0</span>
+  </div>
+
+  <div class="fixed inset-0 flex items-center justify-center text-black" id="startGameBlock">
+    <div class="bg-white max-w-md w-full p-6 text-center">
+      <h1 class="text-4xl font-bold leading-none" id="bigScoreDisplay">0</h1>
+      <p class="text-sm text-gray-700 mb-4">Points</p>
+      <div>
+        <button class="bg-blue-500 text-white w-full py-3 rounded-full text-sm" id="startGameButton">Start Game</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas></canvas>
+
+  <!-- this is the link for gsap 3.5.1, which is used for animation stuff -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
